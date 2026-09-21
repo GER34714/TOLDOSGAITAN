@@ -1,101 +1,136 @@
 ```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Toldos a Medida | Estilo, Protección y Confort</title>
 
-<meta name="description" content="Toldos a medida para locales comerciales, cafeterías, restaurantes, heladerías y más. Elegí el color y diseño ideal para tu negocio. Consultanos por WhatsApp.">
-
-<!-- ================= OPEN GRAPH ================= -->
+<meta name="description"
+content="Toldos a medida para locales comerciales, cafeterías, restaurantes, heladerías y diferentes espacios. Diseños personalizados, protección y confort.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Toldos a Medida | Estilo, Protección y Confort">
-<meta property="og:description" content="Diseñamos toldos a medida para darle estilo, sombra y protección a tu local.">
+<meta property="og:description" content="Diseñamos toldos a medida para darle estilo, sombra y protección a tu espacio.">
 <meta property="og:image" content="https://iili.io/nuIMy4n.md.png">
 
 <link rel="icon" href="https://iili.io/nuIMy4n.md.png">
 
-<!-- ================= FUENTES ================= -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
 
 <style>
 
+/* =========================================================
+   VARIABLES
+========================================================= */
+
 :root {
+
     --rosa: #d96b91;
     --rosa-claro: #fcecf2;
+
     --bordo: #762d4e;
     --bordo-oscuro: #4e1d35;
+
     --crema: #fffafc;
+
     --texto: #30252b;
     --gris: #70676c;
+
     --blanco: #ffffff;
-    --sombra: 0 10px 35px rgba(118, 45, 78, 0.10);
+
+    --sombra:
+        0 10px 35px rgba(118, 45, 78, 0.10);
+
     --radio: 18px;
 
-    /*
-    ============================================================
-    LOGO PNG TRANSPARENTE
-    ============================================================
-    Cambiá solamente esta URL si tenés otra versión del logo
-    en PNG transparente.
-    ============================================================
-    */
-    --logo-url: url("https://iili.io/nuIMy4n.md.png");
-
-    /*
-    ============================================================
-    FOTO DE FONDO DEL HERO
-    ============================================================
-    Imagen de fachada/local con toldo.
-    ============================================================
-    */
-    --hero-image: url("https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=2000&q=85");
 }
+
+
+/* =========================================================
+   RESET
+========================================================= */
 
 * {
+
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
 
 html {
+
     scroll-behavior: smooth;
+
     scroll-padding-top: 90px;
+
 }
+
 
 body {
+
     font-family: 'Montserrat', sans-serif;
+
     background: var(--crema);
+
     color: var(--texto);
+
     line-height: 1.6;
+
 }
+
 
 a {
+
     text-decoration: none;
+
     color: inherit;
+
 }
+
 
 img {
+
     max-width: 100%;
+
     display: block;
+
 }
+
 
 button {
+
     font-family: inherit;
+
 }
 
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
 .container {
+
     width: min(1160px, 92%);
+
     margin: auto;
+
 }
 
 
@@ -104,75 +139,132 @@ button {
 ========================================================= */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
-    background: rgba(255, 250, 252, 0.97);
-    border-bottom: 1px solid rgba(118, 45, 78, 0.10);
+
+    background:
+        rgba(255, 250, 252, 0.97);
+
+    border-bottom:
+        1px solid rgba(118, 45, 78, 0.10);
+
     backdrop-filter: blur(12px);
+
 }
+
 
 .navbar {
+
     min-height: 84px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 25px;
+
 }
+
 
 .logo {
+
     display: flex;
+
     align-items: center;
+
 }
 
+
 .logo img {
+
     width: 145px;
+
     max-height: 68px;
+
     object-fit: contain;
+
     background: transparent;
+
 }
 
 
 /* =========================================================
-   NAVEGACIÓN
+   MENU
 ========================================================= */
 
 .nav-links {
+
     display: flex;
+
     align-items: center;
+
     gap: 25px;
+
     list-style: none;
+
 }
+
 
 .nav-links a {
+
     font-size: 13px;
+
     font-weight: 700;
+
     color: var(--bordo);
-    transition: 0.3s;
+
+    transition: .3s;
+
 }
+
 
 .nav-links a:hover {
+
     color: var(--rosa);
+
 }
+
 
 .nav-contact {
+
     background: var(--bordo);
+
     color: white !important;
+
     padding: 12px 18px;
+
     border-radius: 30px;
+
 }
+
 
 .nav-contact:hover {
+
     background: var(--rosa);
+
 }
 
+
 .menu-btn {
+
     display: none;
+
     border: none;
+
     background: transparent;
+
     color: var(--bordo);
+
     font-size: 25px;
+
     cursor: pointer;
+
 }
 
 
@@ -181,127 +273,159 @@ header {
 ========================================================= */
 
 .hero {
+
     position: relative;
+
     overflow: hidden;
+
     min-height: 720px;
 
     display: flex;
+
     align-items: center;
 
     padding: 90px 0 100px;
 
-    /*
-    FOTO DE FONDO CON TOLDOS
-    */
     background-image:
+
         linear-gradient(
             90deg,
-            rgba(49, 19, 34, 0.82) 0%,
-            rgba(78, 29, 53, 0.68) 45%,
-            rgba(78, 29, 53, 0.30) 100%
+            rgba(49, 19, 34, .82) 0%,
+            rgba(78, 29, 53, .64) 48%,
+            rgba(78, 29, 53, .28) 100%
         ),
-        var(--hero-image);
+
+        url("https://iili.io/nuulpnt.jpg");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
 }
 
+
 .hero::before {
+
     content: "";
+
     position: absolute;
+
     inset: 0;
 
     background:
         radial-gradient(
             circle at 80% 20%,
-            rgba(217,107,145,0.30),
-            transparent 32%
+            rgba(217,107,145,.28),
+            transparent 35%
         );
 
     pointer-events: none;
+
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-
-    border: 45px solid rgba(255,255,255,0.05);
-
-    border-radius: 50%;
-
-    right: -150px;
-    bottom: -200px;
-
-    pointer-events: none;
-}
 
 .hero-grid {
+
     position: relative;
+
     z-index: 2;
 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+
+    justify-content: center;
+
     align-items: center;
 
-    max-width: 950px;
+    text-align: center;
+
+    width: 100%;
+
+}
+
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
     margin: auto;
 
-    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
 }
 
 
 /* =========================================================
-   LOGO DEL HERO
+   LOGO HERO — CENTRADO
 ========================================================= */
 
 .hero-logo {
+
+    width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
-    margin-bottom: 28px;
+    text-align: center;
+
+    margin: 0 auto 25px;
+
 }
 
+
 .hero-logo img {
-    width: 210px;
-    max-width: 65vw;
-    max-height: 130px;
+
+    width: 220px;
+
+    max-width: 70vw;
+
+    max-height: 135px;
 
     object-fit: contain;
 
-    /*
-    MUY IMPORTANTE:
-    transparente, sin fondo blanco
-    */
     background: transparent;
 
+    margin: 0 auto;
+
     filter:
-        drop-shadow(0 8px 20px rgba(0,0,0,0.28));
+        drop-shadow(
+            0 8px 22px rgba(0,0,0,.32)
+        );
+
 }
 
 
 /* =========================================================
-   TEXTO HERO
+   HERO CONTENT
 ========================================================= */
 
-.hero-content {
-    max-width: 850px;
-    margin: auto;
-}
-
 .hero-tag {
+
     display: inline-flex;
+
     align-items: center;
+
+    justify-content: center;
+
     gap: 9px;
 
     color: white;
 
-    background: rgba(255,255,255,0.13);
+    background:
+        rgba(255,255,255,.13);
 
-    border: 1px solid rgba(255,255,255,0.28);
+    border:
+        1px solid rgba(255,255,255,.28);
 
     backdrop-filter: blur(10px);
 
@@ -310,19 +434,27 @@ header {
     border-radius: 30px;
 
     font-size: 11px;
+
     font-weight: 800;
 
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
 
     margin-bottom: 22px;
+
 }
+
 
 .hero-tag i {
+
     color: #f5b7cc;
+
 }
 
+
 .hero h1 {
-    font-size: clamp(34px, 5vw, 64px);
+
+    font-size:
+        clamp(34px, 5vw, 64px);
 
     line-height: 1.10;
 
@@ -334,40 +466,56 @@ header {
 
     letter-spacing: -1.5px;
 
-    text-shadow: 0 4px 20px rgba(0,0,0,0.20);
+    text-shadow:
+        0 4px 20px rgba(0,0,0,.25);
+
 }
+
 
 .hero h1 span {
+
     color: #f5b7cc;
+
 }
 
+
 .hero p {
-    color: rgba(255,255,255,0.88);
+
+    color:
+        rgba(255,255,255,.90);
 
     font-size: 17px;
 
     max-width: 680px;
 
     margin: 0 auto 30px;
+
 }
 
 
 /* =========================================================
-   BOTONES HERO
+   BOTONES
 ========================================================= */
 
 .hero-buttons {
+
     display: flex;
+
     flex-wrap: wrap;
 
     justify-content: center;
 
     gap: 13px;
+
 }
 
+
 .btn {
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 10px;
@@ -382,59 +530,77 @@ header {
 
     border: 2px solid transparent;
 
-    transition: 0.3s;
+    transition: .3s;
 
     cursor: pointer;
+
 }
 
+
 .btn-primary {
+
     background: var(--bordo);
 
     color: white;
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,0.25);
+        0 8px 25px rgba(0,0,0,.25);
+
 }
 
+
 .btn-primary:hover {
+
     background: var(--rosa);
 
     transform: translateY(-3px);
+
 }
 
+
 .btn-outline {
+
     border-color: white;
 
     color: white;
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,.08);
 
     backdrop-filter: blur(8px);
+
 }
 
+
 .btn-outline:hover {
+
     background: white;
 
     color: var(--bordo);
+
 }
 
 
 /* =========================================================
-   BADGE HERO
+   HERO BADGE
 ========================================================= */
 
 .hero-badge {
+
     position: absolute;
 
     bottom: 35px;
+
     left: 35px;
 
     display: flex;
+
     align-items: center;
 
     gap: 12px;
 
-    background: rgba(78,29,53,0.92);
+    background:
+        rgba(78,29,53,.94);
 
     backdrop-filter: blur(10px);
 
@@ -447,26 +613,36 @@ header {
     box-shadow: var(--sombra);
 
     z-index: 5;
+
 }
 
+
 .hero-badge i {
+
     font-size: 25px;
 
     color: #f5b7cc;
+
 }
 
+
 .hero-badge strong {
+
     display: block;
 
     font-size: 13px;
+
 }
 
+
 .hero-badge small {
+
     display: block;
 
     font-size: 10px;
 
-    opacity: 0.85;
+    opacity: .85;
+
 }
 
 
@@ -475,18 +651,25 @@ header {
 ========================================================= */
 
 .section {
+
     padding: 85px 0;
+
 }
 
+
 .section-heading {
+
     text-align: center;
 
     max-width: 680px;
 
     margin: 0 auto 48px;
+
 }
 
+
 .section-heading .eyebrow {
+
     color: var(--rosa);
 
     font-size: 12px;
@@ -498,10 +681,14 @@ header {
     letter-spacing: 2px;
 
     margin-bottom: 10px;
+
 }
 
+
 .section-heading h2 {
-    font-size: clamp(27px, 3vw, 38px);
+
+    font-size:
+        clamp(27px, 3vw, 38px);
 
     color: var(--bordo-oscuro);
 
@@ -510,12 +697,16 @@ header {
     margin-bottom: 15px;
 
     font-weight: 800;
+
 }
 
+
 .section-heading p {
+
     color: var(--gris);
 
     font-size: 14px;
+
 }
 
 
@@ -524,46 +715,64 @@ header {
 ========================================================= */
 
 .benefits {
+
     background: white;
+
 }
+
 
 .benefits-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 20px;
+
 }
 
+
 .benefit-card {
+
     padding: 30px 22px;
 
     text-align: center;
 
     background: var(--crema);
 
-    border: 1px solid rgba(118,45,78,0.08);
+    border:
+        1px solid rgba(118,45,78,.08);
 
     border-radius: var(--radio);
 
-    transition: 0.3s;
+    transition: .3s;
+
 }
 
+
 .benefit-card:hover {
+
     transform: translateY(-7px);
 
     box-shadow: var(--sombra);
 
-    border-color: rgba(217,107,145,0.3);
+    border-color:
+        rgba(217,107,145,.3);
+
 }
 
+
 .icon-box {
+
     width: 65px;
+
     height: 65px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     margin: 0 auto 20px;
@@ -575,20 +784,27 @@ header {
     border-radius: 18px;
 
     font-size: 25px;
+
 }
 
+
 .benefit-card h3 {
+
     color: var(--bordo);
 
     font-size: 15px;
 
     margin-bottom: 10px;
+
 }
 
+
 .benefit-card p {
+
     color: var(--gris);
 
     font-size: 12px;
+
 }
 
 
@@ -597,23 +813,31 @@ header {
 ========================================================= */
 
 .applications {
+
     background: var(--crema);
+
 }
+
 
 .applications-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 20px;
+
 }
 
+
 .application-card {
+
     position: relative;
 
     overflow: hidden;
 
-    min-height: 200px;
+    min-height: 230px;
 
     display: flex;
 
@@ -623,64 +847,451 @@ header {
 
     border-radius: var(--radio);
 
-    background:
-        linear-gradient(
-            145deg,
-            var(--bordo),
-            var(--rosa)
-        );
-
     color: white;
 
     box-shadow: var(--sombra);
+
+    background-size: cover;
+
+    background-position: center;
+
 }
+
+
+.application-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(49,19,34,.88),
+            rgba(78,29,53,.20)
+        );
+
+}
+
+
+.application-card:nth-child(1) {
+
+    background-image:
+        url("https://iili.io/nuul8uV.jpg");
+
+}
+
 
 .application-card:nth-child(2) {
-    background:
-        linear-gradient(
-            145deg,
-            #8c4666,
-            #d889a6
-        );
+
+    background-image:
+        url("https://iili.io/nuulN3b.jpg");
+
 }
+
 
 .application-card:nth-child(3) {
-    background:
-        linear-gradient(
-            145deg,
-            #5d2945,
-            #a64c72
-        );
+
+    background-image:
+        url("https://iili.io/nuulhGe.jpg");
+
 }
+
 
 .application-card:nth-child(4) {
-    background:
-        linear-gradient(
-            145deg,
-            #b65c7e,
-            #edabc1
-        );
+
+    background-image:
+        url("https://iili.io/nuulDwN.jpg");
+
 }
 
+
 .application-card i {
+
     position: absolute;
 
     right: 20px;
+
     top: 20px;
 
     font-size: 42px;
 
-    opacity: 0.25;
+    opacity: .35;
+
+    z-index: 2;
+
 }
 
+
 .application-card h3 {
+
     font-size: 16px;
 
     line-height: 1.3;
 
     position: relative;
 
-    z-index: 1;
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
+.gallery-section {
+
+    background: white;
+
+}
+
+
+.gallery-wrapper {
+
+    position: relative;
+
+}
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 3;
+
+    border-radius: 17px;
+
+    background: #eee;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 22px rgba(0,0,0,.08);
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+
+}
+
+
+.gallery-item::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(78,29,53,.72),
+            transparent 55%
+        );
+
+    opacity: 0;
+
+    transition: .3s;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.gallery-item:hover::after {
+
+    opacity: 1;
+
+}
+
+
+.gallery-icon {
+
+    position: absolute;
+
+    z-index: 2;
+
+    right: 16px;
+
+    bottom: 14px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.92);
+
+    color: var(--bordo);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition: .3s;
+
+}
+
+
+.gallery-item:hover .gallery-icon {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   GALERÍA CONTROLES
+========================================================= */
+
+.gallery-controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.gallery-control {
+
+    border: none;
+
+    background: var(--rosa-claro);
+
+    color: var(--bordo);
+
+    min-width: 46px;
+
+    height: 46px;
+
+    padding: 0 18px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.gallery-control:hover {
+
+    background: var(--rosa);
+
+    color: white;
+
+}
+
+
+.gallery-control:disabled {
+
+    opacity: .35;
+
+    cursor: not-allowed;
+
+}
+
+
+.gallery-counter {
+
+    min-width: 95px;
+
+    text-align: center;
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 5000;
+
+    background:
+        rgba(20, 10, 15, .94);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+.lightbox.active {
+
+    display: flex;
+
+}
+
+
+.lightbox-image {
+
+    max-width: 92vw;
+
+    max-height: 88vh;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 70px rgba(0,0,0,.5);
+
+}
+
+
+.lightbox-close {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 25px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.12);
+
+    color: white;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+}
+
+
+.lightbox-prev,
+.lightbox-next {
+
+    position: fixed;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 52px;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.13);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+
+    background: var(--rosa);
+
+}
+
+
+.lightbox-prev {
+
+    left: 20px;
+
+}
+
+
+.lightbox-next {
+
+    right: 20px;
+
 }
 
 
@@ -689,70 +1300,128 @@ header {
 ========================================================= */
 
 .custom {
+
     background: white;
+
 }
 
+
 .custom-grid {
+
     display: grid;
 
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns:
+        .95fr 1.05fr;
 
     gap: 65px;
 
     align-items: center;
+
 }
 
+
+/* =========================================================
+   IMAGEN "TU TOLDO A MEDIDA"
+========================================================= */
+
 .custom-visual {
+
     position: relative;
 
-    background: var(--rosa-claro);
+    overflow: hidden;
+
+    min-height: 430px;
 
     border-radius: 30px;
 
-    padding: 35px;
+    box-shadow:
+        0 15px 45px rgba(78,29,53,.16);
 
-    overflow: hidden;
 }
 
-.custom-visual::before {
+
+.custom-visual img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.custom-visual::after {
+
     content: "";
 
     position: absolute;
 
-    width: 220px;
-    height: 220px;
+    inset: 0;
 
-    border-radius: 50%;
+    background:
+        linear-gradient(
+            to top,
+            rgba(49,19,34,.88),
+            rgba(78,29,53,.10) 65%
+        );
 
-    background: rgba(217,107,145,0.12);
-
-    top: -80px;
-    right: -70px;
 }
 
-.custom-visual i {
-    display: block;
 
-    text-align: center;
+.custom-visual-content {
 
-    font-size: 125px;
+    position: absolute;
 
-    color: var(--bordo);
+    left: 30px;
 
-    margin: 20px 0;
+    right: 30px;
+
+    bottom: 28px;
+
+    z-index: 2;
+
+    color: white;
+
 }
 
-.custom-visual h3 {
-    position: relative;
 
-    text-align: center;
+.custom-visual-content .small-title {
 
-    color: var(--bordo);
+    font-size: 11px;
 
-    font-size: 18px;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #f2adc5;
+
+    margin-bottom: 8px;
+
 }
+
+
+.custom-visual-content h3 {
+
+    font-size: 27px;
+
+    line-height: 1.15;
+
+}
+
+
+/* =========================================================
+   CUSTOM CONTENT
+========================================================= */
 
 .custom-content .eyebrow {
+
     color: var(--rosa);
 
     font-size: 12px;
@@ -764,27 +1433,37 @@ header {
     text-transform: uppercase;
 
     margin-bottom: 12px;
+
 }
 
+
 .custom-content h2 {
+
     color: var(--bordo-oscuro);
 
-    font-size: clamp(27px, 3vw, 38px);
+    font-size:
+        clamp(27px, 3vw, 38px);
 
     line-height: 1.2;
 
     margin-bottom: 20px;
+
 }
 
+
 .custom-content > p {
+
     color: var(--gris);
 
     font-size: 14px;
 
     margin-bottom: 25px;
+
 }
 
+
 .check-list {
+
     list-style: none;
 
     display: grid;
@@ -792,9 +1471,12 @@ header {
     gap: 15px;
 
     margin-bottom: 30px;
+
 }
 
+
 .check-list li {
+
     display: flex;
 
     align-items: center;
@@ -805,11 +1487,13 @@ header {
 
     font-weight: 600;
 
-    color: var(--texto);
 }
 
+
 .check-list i {
+
     width: 27px;
+
     height: 27px;
 
     border-radius: 50%;
@@ -817,6 +1501,7 @@ header {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background: var(--rosa-claro);
@@ -824,6 +1509,7 @@ header {
     color: var(--bordo);
 
     font-size: 12px;
+
 }
 
 
@@ -832,23 +1518,35 @@ header {
 ========================================================= */
 
 .colors-section {
+
     background: var(--rosa-claro);
+
 }
+
 
 .colors-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns:
+        repeat(8, 1fr);
 
     gap: 15px;
+
 }
+
 
 .color-item {
+
     text-align: center;
+
 }
 
+
 .color-circle {
+
     width: 75px;
+
     height: 75px;
 
     margin: 0 auto 12px;
@@ -858,47 +1556,75 @@ header {
     border: 5px solid white;
 
     box-shadow:
-        0 5px 18px rgba(0,0,0,0.10);
+        0 5px 18px rgba(0,0,0,.10);
+
 }
 
+
 .color-item span {
+
     font-size: 11px;
 
     font-weight: 700;
 
     color: var(--bordo);
+
 }
+
 
 .rosa {
+
     background: #e89ab4;
+
 }
+
 
 .rojo {
+
     background: #c52d42;
+
 }
+
 
 .burdeos {
+
     background: #762d4e;
+
 }
+
 
 .verde {
+
     background: #537d62;
+
 }
+
 
 .azul {
+
     background: #477eae;
+
 }
+
 
 .gris {
+
     background: #96969a;
+
 }
+
 
 .negro {
+
     background: #252329;
+
 }
 
+
 .beige {
+
     background: #d8c1a3;
+
 }
 
 
@@ -907,10 +1633,14 @@ header {
 ========================================================= */
 
 .contact-section {
+
     background: white;
+
 }
 
+
 .contact-box {
+
     position: relative;
 
     overflow: hidden;
@@ -935,31 +1665,43 @@ header {
     gap: 35px;
 
     color: white;
+
 }
 
+
 .contact-box::after {
+
     content: "";
 
     position: absolute;
 
     width: 300px;
+
     height: 300px;
 
-    border: 35px solid rgba(255,255,255,0.04);
+    border:
+        35px solid rgba(255,255,255,.04);
 
     border-radius: 50%;
 
     right: -100px;
+
     top: -140px;
+
 }
 
+
 .contact-text {
+
     position: relative;
 
     z-index: 1;
+
 }
 
+
 .contact-text .eyebrow {
+
     color: #f2adc5;
 
     font-size: 11px;
@@ -969,25 +1711,36 @@ header {
     letter-spacing: 2px;
 
     margin-bottom: 10px;
+
 }
 
+
 .contact-text h2 {
-    font-size: clamp(25px, 3vw, 38px);
+
+    font-size:
+        clamp(25px, 3vw, 38px);
 
     line-height: 1.2;
 
     margin-bottom: 15px;
+
 }
 
+
 .contact-text p {
-    color: rgba(255,255,255,0.8);
+
+    color:
+        rgba(255,255,255,.8);
 
     font-size: 13px;
 
     max-width: 520px;
+
 }
 
+
 .contact-details {
+
     position: relative;
 
     z-index: 1;
@@ -999,9 +1752,12 @@ header {
     gap: 15px;
 
     min-width: 260px;
+
 }
 
+
 .contact-link {
+
     display: flex;
 
     align-items: center;
@@ -1014,14 +1770,11 @@ header {
 
     font-weight: 700;
 
-    transition: 0.3s;
 }
 
-.contact-link:hover {
-    color: #f2adc5;
-}
 
 .contact-link i {
+
     color: #f2adc5;
 
     font-size: 20px;
@@ -1029,9 +1782,12 @@ header {
     width: 25px;
 
     text-align: center;
+
 }
 
+
 .contact-details .btn {
+
     margin-top: 10px;
 
     background: white;
@@ -1039,12 +1795,16 @@ header {
     color: var(--bordo);
 
     width: fit-content;
+
 }
 
+
 .contact-details .btn:hover {
+
     background: var(--rosa);
 
     color: white;
+
 }
 
 
@@ -1053,129 +1813,190 @@ header {
 ========================================================= */
 
 footer {
+
     background: #321b27;
 
     color: white;
 
     padding: 55px 0 25px;
+
 }
 
+
 .footer-grid {
+
     display: grid;
 
-    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-columns:
+        1.2fr 1fr 1fr;
 
     gap: 45px;
 
     padding-bottom: 40px;
+
 }
 
 
-/*
-    IMPORTANTE:
-    El footer YA NO tiene fondo blanco detrás del logo.
-*/
+/* =========================================================
+   FOOTER BRAND CENTRADO
+========================================================= */
 
-.footer-logo {
-    display: inline-flex;
+.footer-brand {
+
+    display: flex;
+
+    flex-direction: column;
 
     align-items: center;
+
+    text-align: center;
+
+}
+
+
+.footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
 
     background: transparent;
 
     padding: 0;
 
-    border-radius: 0;
+    margin: 0 auto 18px;
 
-    margin-bottom: 18px;
 }
 
+
 .footer-logo img {
+
     width: 160px;
 
     max-height: 85px;
-
-    height: auto;
 
     object-fit: contain;
 
     background: transparent;
 
+    margin: 0 auto;
+
     filter:
-        drop-shadow(0 5px 15px rgba(0,0,0,0.20));
+        drop-shadow(
+            0 5px 15px rgba(0,0,0,.20)
+        );
+
 }
 
+
 .footer-description {
-    color: rgba(255,255,255,0.65);
+
+    color:
+        rgba(255,255,255,.65);
 
     font-size: 12px;
 
     max-width: 300px;
+
 }
 
+
 .footer-column h3 {
+
     font-size: 14px;
 
     margin-bottom: 20px;
 
     color: #f2adc5;
+
 }
 
+
 .footer-column ul {
+
     list-style: none;
 
     display: grid;
 
     gap: 10px;
+
 }
+
 
 .footer-column li,
 .footer-column a {
-    color: rgba(255,255,255,0.7);
+
+    color:
+        rgba(255,255,255,.7);
 
     font-size: 12px;
 
-    transition: 0.3s;
+    transition: .3s;
+
 }
+
 
 .footer-column a:hover {
+
     color: white;
+
 }
 
+
 .footer-social {
+
     display: flex;
+
+    justify-content: center;
 
     gap: 12px;
 
     margin-top: 20px;
+
 }
 
+
 .social-icon {
+
     width: 38px;
+
     height: 38px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,.08);
 
     color: white;
 
-    transition: 0.3s;
+    transition: .3s;
+
 }
 
+
 .social-icon:hover {
+
     background: var(--rosa);
 
     transform: translateY(-3px);
+
 }
 
+
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.12);
+
+    border-top:
+        1px solid rgba(255,255,255,.12);
 
     padding-top: 23px;
 
@@ -1188,32 +2009,35 @@ footer {
     gap: 20px;
 
     flex-wrap: wrap;
+
 }
+
 
 .footer-bottom p {
-    color: rgba(255,255,255,0.5);
+
+    color:
+        rgba(255,255,255,.5);
 
     font-size: 10px;
+
 }
 
+
 .ciborg-link {
+
     color: #f2adc5;
 
     font-weight: 800;
 
-    transition: 0.3s;
-}
-
-.ciborg-link:hover {
-    color: white;
 }
 
 
 /* =========================================================
-   WHATSAPP FLOTANTE
+   WHATSAPP
 ========================================================= */
 
 .whatsapp-float {
+
     position: fixed;
 
     right: 22px;
@@ -1221,11 +2045,13 @@ footer {
     bottom: 22px;
 
     width: 58px;
+
     height: 58px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background: #25d366;
@@ -1239,13 +2065,35 @@ footer {
     z-index: 999;
 
     box-shadow:
-        0 5px 25px rgba(37,211,102,0.35);
+        0 5px 25px rgba(37,211,102,.35);
 
-    transition: 0.3s;
+    transition:
+        .3s,
+        opacity .25s,
+        visibility .25s;
+
 }
 
+
 .whatsapp-float:hover {
+
     transform: scale(1.1);
+
+}
+
+
+/* SE OCULTA CUANDO SE LLEGA AL FOOTER */
+
+.whatsapp-float.hide-whatsapp {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: scale(.7);
+
 }
 
 
@@ -1257,40 +2105,65 @@ footer {
 
     .benefits-grid,
     .applications-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
     }
+
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
 
     .colors-grid {
-        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-columns:
+            repeat(4, 1fr);
 
         gap: 25px;
+
     }
+
 
     .custom-grid {
+
         gap: 35px;
+
     }
 
-    .contact-box {
-        padding: 40px;
-    }
 }
 
 
 @media (max-width: 760px) {
 
     .navbar {
+
         min-height: 75px;
+
     }
+
 
     .logo img {
+
         width: 125px;
+
     }
+
 
     .menu-btn {
+
         display: block;
+
     }
 
+
     .nav-links {
+
         position: absolute;
 
         top: 75px;
@@ -1310,27 +2183,39 @@ footer {
         padding: 10px 5%;
 
         box-shadow:
-            0 12px 25px rgba(0,0,0,0.08);
+            0 12px 25px rgba(0,0,0,.08);
 
         display: none;
+
     }
+
 
     .nav-links.active {
+
         display: flex;
+
     }
+
 
     .nav-links li {
+
         border-bottom:
-            1px solid rgba(118,45,78,0.08);
+            1px solid rgba(118,45,78,.08);
+
     }
 
+
     .nav-links a {
+
         display: block;
 
         padding: 14px 5px;
+
     }
 
+
     .nav-contact {
+
         display: inline-block !important;
 
         width: fit-content;
@@ -1338,50 +2223,68 @@ footer {
         margin: 8px 0;
 
         padding: 10px 17px !important;
+
     }
 
 
-    /* HERO MOBILE */
+    /* HERO */
 
     .hero {
-        min-height: 720px;
 
-        padding:
-            60px 0 80px;
+        min-height: 730px;
 
-        background-position:
-            center center;
+        padding: 60px 0 80px;
+
+        background-position: center;
+
     }
+
 
     .hero-grid {
-        grid-template-columns: 1fr;
 
-        text-align: center;
+        width: 100%;
+
     }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
 
     .hero-logo {
-        margin-bottom: 22px;
+
+        justify-content: center;
+
+        width: 100%;
+
     }
 
+
     .hero-logo img {
+
         width: 175px;
 
         max-height: 110px;
+
+        margin: 0 auto;
+
     }
+
 
     .hero p {
-        margin-left: auto;
-
-        margin-right: auto;
 
         font-size: 15px;
+
     }
 
-    .hero-buttons {
-        justify-content: center;
-    }
 
     .hero-badge {
+
         position: relative;
 
         left: auto;
@@ -1391,138 +2294,320 @@ footer {
         width: fit-content;
 
         margin: 40px auto 0;
+
     }
+
 
     .section {
+
         padding: 65px 0;
+
     }
+
 
     .custom-grid {
+
         grid-template-columns: 1fr;
+
     }
 
+
     .custom-visual {
-        max-width: 450px;
+
+        max-width: 600px;
 
         width: 100%;
 
         margin: auto;
+
+        min-height: 380px;
+
     }
 
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .gallery-item {
+
+        border-radius: 13px;
+
+    }
+
+
+    .gallery-icon {
+
+        width: 35px;
+
+        height: 35px;
+
+        font-size: 13px;
+
+        right: 10px;
+
+        bottom: 10px;
+
+    }
+
+
+    .lightbox {
+
+        padding: 15px;
+
+    }
+
+
+    .lightbox-image {
+
+        max-width: 96vw;
+
+        max-height: 82vh;
+
+    }
+
+
+    .lightbox-prev,
+    .lightbox-next {
+
+        width: 43px;
+
+        height: 43px;
+
+    }
+
+
+    .lightbox-prev {
+
+        left: 10px;
+
+    }
+
+
+    .lightbox-next {
+
+        right: 10px;
+
+    }
+
+
     .contact-box {
+
         flex-direction: column;
 
         align-items: flex-start;
 
         padding: 35px 25px;
+
     }
+
 
     .contact-details {
+
         width: 100%;
+
     }
+
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
 
         gap: 35px;
+
     }
 
+
     .footer-brand {
-        grid-column: 1 / -1;
+
+        grid-column:
+            1 / -1;
+
     }
+
 }
 
 
 @media (max-width: 480px) {
 
     .hero {
-        min-height: 730px;
+
+        min-height: 750px;
+
     }
+
 
     .hero-logo img {
+
         width: 155px;
+
     }
+
 
     .hero h1 {
+
         font-size: 34px;
+
     }
+
 
     .hero p {
+
         font-size: 14px;
+
     }
 
+
     .btn {
+
         width: 100%;
 
         padding: 14px 18px;
+
     }
 
+
     .hero-buttons .btn {
+
         max-width: 300px;
+
     }
+
 
     .benefits-grid,
     .applications-grid {
+
         grid-template-columns: 1fr;
+
     }
 
-    .benefit-card {
-        padding: 25px;
-    }
 
     .application-card {
-        min-height: 155px;
+
+        min-height: 190px;
+
     }
+
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .gallery-controls {
+
+        gap: 8px;
+
+    }
+
+
+    .gallery-control {
+
+        padding: 0 14px;
+
+    }
+
 
     .colors-grid {
-        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-columns:
+            repeat(4, 1fr);
 
         gap: 20px 10px;
+
     }
+
 
     .color-circle {
+
         width: 58px;
+
         height: 58px;
+
     }
+
 
     .color-item span {
+
         font-size: 10px;
+
     }
+
 
     .custom-visual {
-        padding: 25px;
+
+        min-height: 330px;
+
     }
 
-    .custom-visual i {
-        font-size: 95px;
+
+    .custom-visual-content {
+
+        left: 22px;
+
+        right: 22px;
+
     }
+
+
+    .custom-visual-content h3 {
+
+        font-size: 23px;
+
+    }
+
 
     .footer-grid {
+
         grid-template-columns: 1fr;
+
     }
+
 
     .footer-brand {
+
         grid-column: auto;
+
     }
 
+
     .footer-bottom {
+
         flex-direction: column;
 
         text-align: center;
+
     }
 
+
     .whatsapp-float {
+
         width: 53px;
+
         height: 53px;
 
         font-size: 26px;
 
         right: 16px;
+
         bottom: 16px;
+
     }
+
 }
 
 </style>
+
 </head>
 
 
@@ -1535,67 +2620,72 @@ footer {
 
 <header>
 
-    <div class="container navbar">
-
-        <a href="#inicio" class="logo">
-
-            <img
-                src="https://iili.io/nuIMy4n.md.png"
-                alt="Logo del negocio"
-            >
-
-        </a>
+<div class="container navbar">
 
 
-        <button
-            class="menu-btn"
-            id="menuBtn"
-            aria-label="Abrir menú"
-        >
+<a href="#inicio" class="logo">
 
-            <i class="fa-solid fa-bars"></i>
+<img
+src="https://iili.io/nuIMy4n.md.png"
+alt="Logo del negocio"
+>
 
-        </button>
+</a>
 
 
-        <ul class="nav-links" id="navLinks">
+<button
+class="menu-btn"
+id="menuBtn"
+aria-label="Abrir menú"
+>
 
-            <li>
-                <a href="#inicio">
-                    Inicio
-                </a>
-            </li>
+<i class="fa-solid fa-bars"></i>
 
-            <li>
-                <a href="#beneficios">
-                    Beneficios
-                </a>
-            </li>
+</button>
 
-            <li>
-                <a href="#aplicaciones">
-                    Soluciones
-                </a>
-            </li>
 
-            <li>
-                <a href="#colores">
-                    Colores
-                </a>
-            </li>
+<ul class="nav-links" id="navLinks">
 
-            <li>
-                <a
-                    href="#contacto"
-                    class="nav-contact"
-                >
-                    Consultar
-                </a>
-            </li>
+<li>
+<a href="#inicio">
+Inicio
+</a>
+</li>
 
-        </ul>
+<li>
+<a href="#beneficios">
+Beneficios
+</a>
+</li>
 
-    </div>
+<li>
+<a href="#aplicaciones">
+Soluciones
+</a>
+</li>
+
+<li>
+<a href="#galeria">
+Galería
+</a>
+</li>
+
+<li>
+<a href="#colores">
+Colores
+</a>
+</li>
+
+<li>
+<a href="#contacto" class="nav-contact">
+Consultar
+</a>
+</li>
+
+</ul>
+
+
+</div>
 
 </header>
 
@@ -1605,112 +2695,108 @@ footer {
      HERO
 ========================================================= -->
 
-<section
-    class="hero"
-    id="inicio"
+<section class="hero" id="inicio">
+
+
+<div class="container hero-grid">
+
+
+<div class="hero-content">
+
+
+<div class="hero-logo">
+
+<img
+src="https://iili.io/nuIMy4n.md.png"
+alt="Logo del negocio"
 >
 
-    <div class="container hero-grid">
+</div>
 
 
-        <div class="hero-content">
+<div class="hero-tag">
+
+<i class="fa-solid fa-sun"></i>
+
+TOLDOS A MEDIDA
+
+</div>
 
 
-            <!-- LOGO PNG TRANSPARENTE DEL HERO -->
+<h1>
 
-            <div class="hero-logo">
+Estilo, protección y
 
-                <img
-                    src="https://iili.io/nuIMy4n.md.png"
-                    alt="Logo del negocio"
-                >
+<span>
+confort para tu local.
+</span>
 
-            </div>
-
-
-            <div class="hero-tag">
-
-                <i class="fa-solid fa-sun"></i>
-
-                TOLDOS A MEDIDA
-
-            </div>
+</h1>
 
 
-            <h1>
+<p>
 
-                Estilo, protección y
+Dale una nueva imagen a tu negocio con toldos diseñados
+a medida. Elegí el estilo, el color y la protección ideal
+para tu espacio.
 
-                <span>
-                    confort para tu local.
-                </span>
-
-            </h1>
+</p>
 
 
-            <p>
-
-                Dale una nueva imagen a tu negocio con toldos diseñados
-                a medida. Elegí el estilo, el color y la protección ideal
-                para tu espacio.
-
-            </p>
+<div class="hero-buttons">
 
 
-            <div class="hero-buttons">
+<a
+href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20un%20toldo%20a%20medida."
+class="btn btn-primary"
+target="_blank"
+>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Consultar por WhatsApp
+
+</a>
 
 
-                <a
-                    href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20un%20toldo%20a%20medida."
-                    class="btn btn-primary"
-                    target="_blank"
-                >
+<a
+href="#galeria"
+class="btn btn-outline"
+>
 
-                    <i class="fa-brands fa-whatsapp"></i>
+Ver trabajos
 
-                    Consultar por WhatsApp
+<i class="fa-solid fa-images"></i>
 
-                </a>
-
-
-                <a
-                    href="#beneficios"
-                    class="btn btn-outline"
-                >
-
-                    Conocé más
-
-                    <i class="fa-solid fa-arrow-down"></i>
-
-                </a>
+</a>
 
 
-            </div>
+</div>
 
 
-        </div>
+</div>
 
 
-    </div>
+</div>
 
 
-    <div class="hero-badge">
+<div class="hero-badge">
 
-        <i class="fa-solid fa-ruler-combined"></i>
+<i class="fa-solid fa-ruler-combined"></i>
 
-        <div>
+<div>
 
-            <strong>
-                Diseños a medida
-            </strong>
+<strong>
+Diseños a medida
+</strong>
 
-            <small>
-                Adaptados a tu espacio
-            </small>
+<small>
+Adaptados a tu espacio
+</small>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 
 </section>
@@ -1722,200 +2808,745 @@ footer {
 ========================================================= -->
 
 <section
-    class="section benefits"
-    id="beneficios"
+class="section benefits"
+id="beneficios"
 >
 
-    <div class="container">
+<div class="container">
 
 
-        <div class="section-heading">
+<div class="section-heading">
 
-            <div class="eyebrow">
-                ¿Por qué elegirnos?
-            </div>
+<div class="eyebrow">
+¿Por qué elegirnos?
+</div>
 
-            <h2>
-                Más que un toldo, una mejora para tu negocio
-            </h2>
+<h2>
+Más que un toldo, una mejora para tu negocio
+</h2>
 
-            <p>
-                Combinamos diseño, funcionalidad y materiales de calidad
-                para que tu local se vea mejor y sea más confortable.
-            </p>
+<p>
+Combinamos diseño, funcionalidad y materiales de calidad
+para que tu espacio se vea mejor y sea más confortable.
+</p>
 
-        </div>
-
-
-        <div class="benefits-grid">
+</div>
 
 
-            <article class="benefit-card">
-
-                <div class="icon-box">
-                    <i class="fa-solid fa-sun"></i>
-                </div>
-
-                <h3>
-                    Protección solar
-                </h3>
-
-                <p>
-                    Ayudan a bloquear los rayos solares y a reducir
-                    el calor en el interior de tu local.
-                </p>
-
-            </article>
+<div class="benefits-grid">
 
 
-            <article class="benefit-card">
+<article class="benefit-card">
 
-                <div class="icon-box">
-                    <i class="fa-solid fa-store"></i>
-                </div>
+<div class="icon-box">
 
-                <h3>
-                    Más atractivo
-                </h3>
+<i class="fa-solid fa-sun"></i>
 
-                <p>
-                    Realzá la fachada de tu negocio con un diseño
-                    que combine con tu identidad.
-                </p>
+</div>
 
-            </article>
+<h3>
+Protección solar
+</h3>
 
+<p>
+Ayudan a bloquear los rayos solares y a reducir
+el calor en el interior de tu espacio.
+</p>
 
-            <article class="benefit-card">
-
-                <div class="icon-box">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-
-                <h3>
-                    Materiales resistentes
-                </h3>
-
-                <p>
-                    Soluciones pensadas para el uso diario y
-                    para acompañar tu negocio durante mucho tiempo.
-                </p>
-
-            </article>
+</article>
 
 
-            <article class="benefit-card">
+<article class="benefit-card">
 
-                <div class="icon-box">
-                    <i class="fa-solid fa-gears"></i>
-                </div>
+<div class="icon-box">
 
-                <h3>
-                    Prácticos y funcionales
-                </h3>
+<i class="fa-solid fa-store"></i>
 
-                <p>
-                    Diseños cómodos de utilizar y fáciles
-                    de mantener.
-                </p>
+</div>
 
-            </article>
+<h3>
+Más atractivo
+</h3>
+
+<p>
+Realzá la fachada de tu negocio con un diseño
+que combine con tu identidad.
+</p>
+
+</article>
 
 
-        </div>
+<article class="benefit-card">
 
-    </div>
+<div class="icon-box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+<h3>
+Materiales resistentes
+</h3>
+
+<p>
+Soluciones pensadas para el uso diario
+y diferentes condiciones de exterior.
+</p>
+
+</article>
+
+
+<article class="benefit-card">
+
+<div class="icon-box">
+
+<i class="fa-solid fa-gears"></i>
+
+</div>
+
+<h3>
+Prácticos y funcionales
+</h3>
+
+<p>
+Diseños cómodos de utilizar y adaptados
+a las características de cada espacio.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 
 <!-- =========================================================
-     APLICACIONES
+     SOLUCIONES
 ========================================================= -->
 
 <section
-    class="section applications"
-    id="aplicaciones"
+class="section applications"
+id="aplicaciones"
 >
 
-    <div class="container">
+<div class="container">
 
 
-        <div class="section-heading">
+<div class="section-heading">
 
-            <div class="eyebrow">
-                Soluciones para tu espacio
-            </div>
+<div class="eyebrow">
+Soluciones para tu espacio
+</div>
 
-            <h2>
-                Ideales para diferentes tipos de negocios
-            </h2>
+<h2>
+Ideales para diferentes tipos de negocios
+</h2>
 
-            <p>
-                Encontrá una opción que se adapte a las necesidades
-                y al estilo de tu local.
-            </p>
+<p>
+Encontrá una opción que se adapte a las necesidades
+y al estilo de tu local.
+</p>
 
-        </div>
-
-
-        <div class="applications-grid">
+</div>
 
 
-            <article class="application-card">
-
-                <i class="fa-solid fa-shop"></i>
-
-                <h3>
-                    Locales<br>
-                    comerciales
-                </h3>
-
-            </article>
+<div class="applications-grid">
 
 
-            <article class="application-card">
+<article class="application-card">
 
-                <i class="fa-solid fa-mug-hot"></i>
+<i class="fa-solid fa-shop"></i>
 
-                <h3>
-                    Cafeterías<br>
-                    y restaurantes
-                </h3>
+<h3>
+Locales<br>
+comerciales
+</h3>
 
-            </article>
-
-
-            <article class="application-card">
-
-                <i class="fa-solid fa-ice-cream"></i>
-
-                <h3>
-                    Heladerías<br>
-                    y pastelerías
-                </h3>
-
-            </article>
+</article>
 
 
-            <article class="application-card">
+<article class="application-card">
 
-                <i class="fa-solid fa-store"></i>
+<i class="fa-solid fa-mug-hot"></i>
 
-                <h3>
-                    Ferias<br>
-                    y eventos
-                </h3>
+<h3>
+Cafeterías<br>
+y restaurantes
+</h3>
 
-            </article>
+</article>
 
 
-        </div>
+<article class="application-card">
 
-    </div>
+<i class="fa-solid fa-ice-cream"></i>
+
+<h3>
+Heladerías<br>
+y pastelerías
+</h3>
+
+</article>
+
+
+<article class="application-card">
+
+<i class="fa-solid fa-house"></i>
+
+<h3>
+Hogares<br>
+y espacios exteriores
+</h3>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
+
+
+
+<!-- =========================================================
+     GALERÍA
+========================================================= -->
+
+<section
+class="section gallery-section"
+id="galeria"
+>
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Nuestros trabajos
+</div>
+
+<h2>
+Galería de trabajos realizados
+</h2>
+
+<p>
+Te mostramos algunos ejemplos. Tocá una imagen para verla
+en grande y utilizá los controles para descubrir más trabajos.
+</p>
+
+</div>
+
+
+<div class="gallery-wrapper">
+
+
+<div class="gallery-grid" id="galleryGrid">
+
+
+<!-- 01 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuul8uV.jpg"
+>
+
+<img
+src="https://iili.io/nuul8uV.jpg"
+alt="Toldo rojo y blanco"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 02 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulN3b.jpg"
+>
+
+<img
+src="https://iili.io/nuulN3b.jpg"
+alt="Toldo azul para comercio"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 03 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulhGe.jpg"
+>
+
+<img
+src="https://iili.io/nuulhGe.jpg"
+alt="Toldo azul en local comercial"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 04 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulkyQ.jpg"
+>
+
+<img
+src="https://iili.io/nuulkyQ.jpg"
+alt="Cerramiento exterior"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 05 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulZ9R.jpg"
+>
+
+<img
+src="https://iili.io/nuulZ9R.jpg"
+alt="Cerramiento para exterior"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 06 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulrn1.jpg"
+>
+
+<img
+src="https://iili.io/nuulrn1.jpg"
+alt="Estructura y trabajo de instalación"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 07 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulscJ.jpg"
+>
+
+<img
+src="https://iili.io/nuulscJ.jpg"
+alt="Toldo naranja para comercio"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 08 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulDwN.jpg"
+>
+
+<img
+src="https://iili.io/nuulDwN.jpg"
+alt="Cerramiento exterior junto a piscina"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 09 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulL8v.jpg"
+>
+
+<img
+src="https://iili.io/nuulL8v.jpg"
+alt="Toldo blanco y gris"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 10 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0JFs.jpg"
+>
+
+<img
+src="https://iili.io/nuu0JFs.jpg"
+alt="Cerramiento exterior con lona"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 11 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulpnt.jpg"
+>
+
+<img
+src="https://iili.io/nuulpnt.jpg"
+alt="Toldos rosas en comercio"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 12 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuulyMX.jpg"
+>
+
+<img
+src="https://iili.io/nuulyMX.jpg"
+alt="Cerramiento exterior nocturno"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 13 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0dcG.jpg"
+>
+
+<img
+src="https://iili.io/nuu0dcG.jpg"
+alt="Toldo verde para local"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 14 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0F94.jpg"
+>
+
+<img
+src="https://iili.io/nuu0F94.jpg"
+alt="Cerramiento exterior con piscina"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 15 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu02Sf.jpg"
+>
+
+<img
+src="https://iili.io/nuu02Sf.jpg"
+alt="Cerramiento de lona transparente"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 16 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0KAl.jpg"
+>
+
+<img
+src="https://iili.io/nuu0KAl.jpg"
+alt="Toldos para comercio"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 17 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0fN2.jpg"
+>
+
+<img
+src="https://iili.io/nuu0fN2.jpg"
+alt="Trabajo sobre vehículo"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 18 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0nV9.jpg"
+>
+
+<img
+src="https://iili.io/nuu0nV9.jpg"
+alt="Trabajo de cobertura para vehículo"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 19 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0Co7.jpg"
+>
+
+<img
+src="https://iili.io/nuu0Co7.jpg"
+alt="Cobertura para camioneta"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+<!-- 20 -->
+
+<div
+class="gallery-item"
+data-image="https://iili.io/nuu0oPe.jpg"
+>
+
+<img
+src="https://iili.io/nuu0oPe.jpg"
+alt="Cobertura lateral para camioneta"
+loading="lazy"
+>
+
+<div class="gallery-icon">
+<i class="fa-solid fa-expand"></i>
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="gallery-controls">
+
+<button
+class="gallery-control"
+id="galleryPrev"
+aria-label="Trabajos anteriores"
+>
+
+<i class="fa-solid fa-chevron-left"></i>
+
+</button>
+
+
+<span
+class="gallery-counter"
+id="galleryCounter"
+>
+1 / 5
+</span>
+
+
+<button
+class="gallery-control"
+id="galleryNext"
+aria-label="Siguientes trabajos"
+>
+
+Ver más
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
+
+<div
+class="lightbox"
+id="lightbox"
+>
+
+<button
+class="lightbox-close"
+id="lightboxClose"
+aria-label="Cerrar"
+>
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+
+<button
+class="lightbox-prev"
+id="lightboxPrev"
+aria-label="Imagen anterior"
+>
+
+<i class="fa-solid fa-chevron-left"></i>
+
+</button>
+
+
+<img
+class="lightbox-image"
+id="lightboxImage"
+src=""
+alt="Imagen ampliada"
+>
+
+
+<button
+class="lightbox-next"
+id="lightboxNext"
+aria-label="Imagen siguiente"
+>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+
+</div>
 
 
 
@@ -1925,105 +3556,119 @@ footer {
 
 <section class="section custom">
 
-    <div class="container custom-grid">
+<div class="container custom-grid">
 
 
-        <div class="custom-visual">
+<div class="custom-visual">
 
-            <i class="fa-solid fa-ruler-combined"></i>
+<img
+src="https://iili.io/nuulrn1.jpg"
+alt="Toldo realizado a medida"
+loading="lazy"
+>
 
-            <h3>
-                Tu toldo, a tu medida
-            </h3>
+<div class="custom-visual-content">
 
-        </div>
+<div class="small-title">
+Diseño personalizado
+</div>
 
+<h3>
+Tu toldo, a tu medida
+</h3>
 
-        <div class="custom-content">
+</div>
 
-            <div class="eyebrow">
-                Personalización
-            </div>
-
-            <h2>
-                Diseñamos cada toldo pensando en tu negocio
-            </h2>
-
-            <p>
-                Cada local tiene su propio estilo. Por eso, trabajamos
-                con opciones que se adaptan a tus necesidades y a la
-                imagen que querés transmitir.
-            </p>
+</div>
 
 
-            <ul class="check-list">
+<div class="custom-content">
+
+<div class="eyebrow">
+Personalización
+</div>
 
 
-                <li>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Medidas adaptadas a tu espacio
-
-                </li>
+<h2>
+Diseñamos cada toldo pensando en tu espacio
+</h2>
 
 
-                <li>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Colores que combinan con tu marca
-
-                </li>
+<p>
+Cada espacio tiene su propio estilo. Por eso trabajamos
+con opciones que se adaptan a tus necesidades y a la
+imagen que querés transmitir.
+</p>
 
 
-                <li>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Diseños funcionales y atractivos
-
-                </li>
+<ul class="check-list">
 
 
-                <li>
+<li>
 
-                    <i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-check"></i>
 
-                    Materiales de calidad
+Medidas adaptadas a tu espacio
 
-                </li>
-
-
-                <li>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Confección profesional
-
-                </li>
+</li>
 
 
-            </ul>
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+Colores que combinan con tu marca
+
+</li>
 
 
-            <a
-                href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20un%20toldo%20personalizado."
-                class="btn btn-primary"
-                target="_blank"
-            >
+<li>
 
-                <i class="fa-brands fa-whatsapp"></i>
+<i class="fa-solid fa-check"></i>
 
-                Pedir presupuesto
+Diseños funcionales y atractivos
 
-            </a>
+</li>
 
 
-        </div>
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+Materiales de calidad
+
+</li>
 
 
-    </div>
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+Confección profesional
+
+</li>
+
+
+</ul>
+
+
+<a
+href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20un%20toldo%20personalizado."
+class="btn btn-primary"
+target="_blank"
+>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Pedir presupuesto
+
+</a>
+
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -2034,125 +3679,85 @@ footer {
 ========================================================= -->
 
 <section
-    class="section colors-section"
-    id="colores"
+class="section colors-section"
+id="colores"
 >
 
-    <div class="container">
+<div class="container">
 
 
-        <div class="section-heading">
+<div class="section-heading">
 
-            <div class="eyebrow">
-                Elegí tu estilo
-            </div>
+<div class="eyebrow">
+Elegí tu estilo
+</div>
 
-            <h2>
-                Colores disponibles
-            </h2>
+<h2>
+Colores disponibles
+</h2>
 
-            <p>
-                Elegí el tono que mejor combine con la fachada
-                y la identidad de tu negocio.
-            </p>
+<p>
+Elegí el tono que mejor combine con la fachada
+y la identidad de tu negocio.
+</p>
 
-        </div>
-
-
-        <div class="colors-grid">
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle rosa"></div>
-
-                <span>
-                    Rosa
-                </span>
-
-            </div>
+<div class="colors-grid">
 
 
-            <div class="color-item">
-
-                <div class="color-circle rojo"></div>
-
-                <span>
-                    Rojo
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle rosa"></div>
+<span>Rosa</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle burdeos"></div>
-
-                <span>
-                    Burdeos
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle rojo"></div>
+<span>Rojo</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle verde"></div>
-
-                <span>
-                    Verde
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle burdeos"></div>
+<span>Burdeos</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle azul"></div>
-
-                <span>
-                    Azul
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle verde"></div>
+<span>Verde</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle gris"></div>
-
-                <span>
-                    Gris
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle azul"></div>
+<span>Azul</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle negro"></div>
-
-                <span>
-                    Negro
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle gris"></div>
+<span>Gris</span>
+</div>
 
 
-            <div class="color-item">
-
-                <div class="color-circle beige"></div>
-
-                <span>
-                    Beige
-                </span>
-
-            </div>
+<div class="color-item">
+<div class="color-circle negro"></div>
+<span>Negro</span>
+</div>
 
 
-        </div>
+<div class="color-item">
+<div class="color-circle beige"></div>
+<span>Beige</span>
+</div>
 
-    </div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -2163,82 +3768,84 @@ footer {
 ========================================================= -->
 
 <section
-    class="section contact-section"
-    id="contacto"
+class="section contact-section"
+id="contacto"
 >
 
-    <div class="container">
+<div class="container">
 
 
-        <div class="contact-box">
+<div class="contact-box">
 
 
-            <div class="contact-text">
+<div class="contact-text">
 
-                <div class="eyebrow">
-                    Hablemos de tu proyecto
-                </div>
-
-                <h2>
-                    ¿Querés mejorar la imagen de tu local?
-                </h2>
-
-                <p>
-                    Consultanos por tu toldo a medida. Te ayudamos
-                    a encontrar una opción que se adapte a tu negocio.
-                </p>
-
-            </div>
+<div class="eyebrow">
+Hablemos de tu proyecto
+</div>
 
 
-            <div class="contact-details">
+<h2>
+¿Querés mejorar la imagen de tu local?
+</h2>
 
 
-                <a
-                    href="https://wa.me/541137845737"
-                    target="_blank"
-                    class="contact-link"
-                >
+<p>
+Consultanos por tu toldo a medida. Te ayudamos
+a encontrar una opción que se adapte a tu espacio.
+</p>
 
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    11 3784 5737
-
-                </a>
+</div>
 
 
-                <a
-                    href="https://www.instagram.com/i.urencitasdelirene/"
-                    target="_blank"
-                    class="contact-link"
-                >
-
-                    <i class="fa-brands fa-instagram"></i>
-
-                    @i.urencitasdelirene
-
-                </a>
+<div class="contact-details">
 
 
-                <a
-                    href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20toldos%20a%20medida."
-                    target="_blank"
-                    class="btn"
-                >
+<a
+href="https://wa.me/541137845737"
+target="_blank"
+class="contact-link"
+>
 
-                    <i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
-                    Consultar sin compromiso
+11 3784 5737
 
-                </a>
-
-
-            </div>
+</a>
 
 
-        </div>
+<a
+href="https://www.instagram.com/i.urencitasdelirene/"
+target="_blank"
+class="contact-link"
+>
 
-    </div>
+<i class="fa-brands fa-instagram"></i>
+
+@i.urencitasdelirene
+
+</a>
+
+
+<a
+href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20toldos%20a%20medida."
+target="_blank"
+class="btn"
+>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Consultar sin compromiso
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -2248,196 +3855,203 @@ footer {
      FOOTER
 ========================================================= -->
 
-<footer>
+<footer id="footer">
 
-    <div class="container">
+<div class="container">
 
 
-        <div class="footer-grid">
+<div class="footer-grid">
 
 
-            <div class="footer-brand">
+<div class="footer-brand">
 
 
-                <!-- LOGO PNG TRANSPARENTE -->
+<a
+href="#inicio"
+class="footer-logo"
+>
 
-                <a
-                    href="#inicio"
-                    class="footer-logo"
-                >
+<img
+src="https://iili.io/nuIMy4n.md.png"
+alt="Logo del negocio"
+>
 
-                    <img
-                        src="https://iili.io/nuIMy4n.md.png"
-                        alt="Logo del negocio"
-                    >
+</a>
 
-                </a>
 
+<p class="footer-description">
 
-                <p class="footer-description">
+Toldos a medida para darle estilo,
+protección y confort a tu espacio.
 
-                    Toldos a medida para darle estilo, protección
-                    y confort a tu negocio.
+</p>
 
-                </p>
 
+<div class="footer-social">
 
-                <div class="footer-social">
 
+<a
+href="https://www.instagram.com/i.urencitasdelirene/"
+target="_blank"
+class="social-icon"
+aria-label="Instagram"
+>
 
-                    <a
-                        href="https://www.instagram.com/i.urencitasdelirene/"
-                        target="_blank"
-                        class="social-icon"
-                        aria-label="Instagram"
-                    >
+<i class="fa-brands fa-instagram"></i>
 
-                        <i class="fa-brands fa-instagram"></i>
+</a>
 
-                    </a>
 
+<a
+href="https://wa.me/541137845737"
+target="_blank"
+class="social-icon"
+aria-label="WhatsApp"
+>
 
-                    <a
-                        href="https://wa.me/541137845737"
-                        target="_blank"
-                        class="social-icon"
-                        aria-label="WhatsApp"
-                    >
+<i class="fa-brands fa-whatsapp"></i>
 
-                        <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-                    </a>
 
+</div>
 
-                </div>
 
+</div>
 
-            </div>
 
+<div class="footer-column">
 
-            <div class="footer-column">
+<h3>
+Navegación
+</h3>
 
-                <h3>
-                    Navegación
-                </h3>
 
-                <ul>
+<ul>
 
-                    <li>
-                        <a href="#inicio">
-                            Inicio
-                        </a>
-                    </li>
+<li>
+<a href="#inicio">
+Inicio
+</a>
+</li>
 
-                    <li>
-                        <a href="#beneficios">
-                            Beneficios
-                        </a>
-                    </li>
+<li>
+<a href="#beneficios">
+Beneficios
+</a>
+</li>
 
-                    <li>
-                        <a href="#aplicaciones">
-                            Soluciones
-                        </a>
-                    </li>
+<li>
+<a href="#aplicaciones">
+Soluciones
+</a>
+</li>
 
-                    <li>
-                        <a href="#colores">
-                            Colores
-                        </a>
-                    </li>
+<li>
+<a href="#galeria">
+Galería
+</a>
+</li>
 
-                    <li>
-                        <a href="#contacto">
-                            Contacto
-                        </a>
-                    </li>
+<li>
+<a href="#colores">
+Colores
+</a>
+</li>
 
-                </ul>
+<li>
+<a href="#contacto">
+Contacto
+</a>
+</li>
 
-            </div>
+</ul>
 
+</div>
 
-            <div class="footer-column">
 
-                <h3>
-                    Contacto
-                </h3>
+<div class="footer-column">
 
-                <ul>
+<h3>
+Contacto
+</h3>
 
-                    <li>
 
-                        <a
-                            href="https://wa.me/541137845737"
-                            target="_blank"
-                        >
+<ul>
 
-                            <i class="fa-brands fa-whatsapp"></i>
+<li>
 
-                            11 3784 5737
+<a
+href="https://wa.me/541137845737"
+target="_blank"
+>
 
-                        </a>
+<i class="fa-brands fa-whatsapp"></i>
 
-                    </li>
+11 3784 5737
 
+</a>
 
-                    <li>
+</li>
 
-                        <a
-                            href="https://www.instagram.com/i.urencitasdelirene/"
-                            target="_blank"
-                        >
 
-                            <i class="fa-brands fa-instagram"></i>
+<li>
 
-                            @i.urencitasdelirene
+<a
+href="https://www.instagram.com/i.urencitasdelirene/"
+target="_blank"
+>
 
-                        </a>
+<i class="fa-brands fa-instagram"></i>
 
-                    </li>
+@i.urencitasdelirene
 
-                </ul>
+</a>
 
-            </div>
+</li>
 
+</ul>
 
-        </div>
+</div>
 
 
-        <div class="footer-bottom">
+</div>
 
 
-            <p>
+<div class="footer-bottom">
 
-                ©
-                <span id="year"></span>
-                Todos los derechos reservados.
 
-            </p>
+<p>
 
+©
+<span id="year"></span>
 
-            <p>
+Todos los derechos reservados.
 
-                Creado y diseñado por
+</p>
 
-                <a
-                    href="https://ciborg347.onrender.com/"
-                    target="_blank"
-                    class="ciborg-link"
-                >
 
-                    CIBORG347
+<p>
 
-                </a>
+Creado y diseñado por
 
-            </p>
+<a
+href="https://ciborg347.onrender.com/"
+target="_blank"
+class="ciborg-link"
+>
 
+CIBORG347
 
-        </div>
+</a>
 
+</p>
 
-    </div>
+
+</div>
+
+
+</div>
 
 </footer>
 
@@ -2448,13 +4062,14 @@ footer {
 ========================================================= -->
 
 <a
-    href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20toldos%20a%20medida."
-    class="whatsapp-float"
-    target="_blank"
-    aria-label="Contactar por WhatsApp"
+href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20toldos%20a%20medida."
+class="whatsapp-float"
+id="whatsappFloat"
+target="_blank"
+aria-label="Contactar por WhatsApp"
 >
 
-    <i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
@@ -2466,19 +4081,29 @@ footer {
 
 <script>
 
-const menuBtn = document.getElementById("menuBtn");
 
-const navLinks = document.getElementById("navLinks");
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
 
 
 menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
 
-    const icon = menuBtn.querySelector("i");
+    const icon =
+    menuBtn.querySelector("i");
 
 
-    if (navLinks.classList.contains("active")) {
+    if (
+        navLinks.classList.contains("active")
+    ) {
 
         icon.classList.remove("fa-bars");
 
@@ -2495,13 +4120,16 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
 
     link.addEventListener("click", () => {
 
         navLinks.classList.remove("active");
 
-        const icon = menuBtn.querySelector("i");
+        const icon =
+        menuBtn.querySelector("i");
 
         icon.classList.remove("fa-xmark");
 
@@ -2512,12 +4140,399 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
+
+/* =========================================================
+   GALERÍA — 4 IMÁGENES POR VEZ
+========================================================= */
+
+const allGalleryItems =
+Array.from(
+    document.querySelectorAll(".gallery-item")
+);
+
+const galleryPrev =
+document.getElementById("galleryPrev");
+
+const galleryNext =
+document.getElementById("galleryNext");
+
+const galleryCounter =
+document.getElementById("galleryCounter");
+
+
+const imagesPerPage = 4;
+
+let galleryPage = 0;
+
+const totalGalleryPages =
+Math.ceil(
+    allGalleryItems.length /
+    imagesPerPage
+);
+
+
+function renderGallery() {
+
+    const start =
+        galleryPage * imagesPerPage;
+
+    const end =
+        start + imagesPerPage;
+
+
+    allGalleryItems.forEach(
+        (item, index) => {
+
+            if (
+                index >= start &&
+                index < end
+            ) {
+
+                item.style.display = "block";
+
+            } else {
+
+                item.style.display = "none";
+
+            }
+
+        }
+    );
+
+
+    galleryCounter.textContent =
+        `${galleryPage + 1} / ${totalGalleryPages}`;
+
+
+    galleryPrev.disabled =
+        galleryPage === 0;
+
+
+    galleryNext.disabled =
+        galleryPage === totalGalleryPages - 1;
+
+
+    if (
+        galleryPage === totalGalleryPages - 1
+    ) {
+
+        galleryNext.innerHTML =
+            `Volver <i class="fa-solid fa-rotate-right"></i>`;
+
+    } else {
+
+        galleryNext.innerHTML =
+            `Ver más <i class="fa-solid fa-chevron-right"></i>`;
+
+    }
+
+}
+
+
+galleryNext.addEventListener(
+    "click",
+    () => {
+
+        if (
+            galleryPage <
+            totalGalleryPages - 1
+        ) {
+
+            galleryPage++;
+
+        } else {
+
+            galleryPage = 0;
+
+        }
+
+
+        renderGallery();
+
+        document
+        .getElementById("galeria")
+        .scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+);
+
+
+galleryPrev.addEventListener(
+    "click",
+    () => {
+
+        if (
+            galleryPage > 0
+        ) {
+
+            galleryPage--;
+
+        }
+
+
+        renderGallery();
+
+        document
+        .getElementById("galeria")
+        .scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+);
+
+
+renderGallery();
+
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImage =
+document.getElementById("lightboxImage");
+
+const lightboxClose =
+document.getElementById("lightboxClose");
+
+const lightboxPrev =
+document.getElementById("lightboxPrev");
+
+const lightboxNext =
+document.getElementById("lightboxNext");
+
+
+let currentImage = 0;
+
+
+const galleryImages =
+allGalleryItems.map(item => {
+
+    return item.dataset.image;
+
+});
+
+
+function openLightbox(index) {
+
+    currentImage = index;
+
+    lightboxImage.src =
+        galleryImages[currentImage];
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeLightbox() {
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+function showNext() {
+
+    currentImage++;
+
+    if (
+        currentImage >= galleryImages.length
+    ) {
+
+        currentImage = 0;
+
+    }
+
+    lightboxImage.src =
+        galleryImages[currentImage];
+
+}
+
+
+function showPrevious() {
+
+    currentImage--;
+
+    if (
+        currentImage < 0
+    ) {
+
+        currentImage =
+            galleryImages.length - 1;
+
+    }
+
+    lightboxImage.src =
+        galleryImages[currentImage];
+
+}
+
+
+allGalleryItems.forEach(
+    (item, index) => {
+
+        item.addEventListener(
+            "click",
+            () => {
+
+                openLightbox(index);
+
+            }
+        );
+
+    }
+);
+
+
+lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+);
+
+
+lightboxNext.addEventListener(
+    "click",
+    showNext
+);
+
+
+lightboxPrev.addEventListener(
+    "click",
+    showPrevious
+);
+
+
+lightbox.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target === lightbox
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            !lightbox.classList.contains("active")
+        ) {
+
+            return;
+
+        }
+
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeLightbox();
+
+        }
+
+
+        if (
+            event.key === "ArrowRight"
+        ) {
+
+            showNext();
+
+        }
+
+
+        if (
+            event.key === "ArrowLeft"
+        ) {
+
+            showPrevious();
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   WHATSAPP — OCULTAR AL LLEGAR AL FOOTER
+========================================================= */
+
+const whatsappFloat =
+document.getElementById("whatsappFloat");
+
+const footer =
+document.getElementById("footer");
+
+
+const footerObserver =
+new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (
+                entry.isIntersecting
+            ) {
+
+                whatsappFloat.classList.add(
+                    "hide-whatsapp"
+                );
+
+            } else {
+
+                whatsappFloat.classList.remove(
+                    "hide-whatsapp"
+                );
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.05
+    }
+);
+
+
+footerObserver.observe(footer);
+
+
+
+/* =========================================================
+   AÑO AUTOMÁTICO
+========================================================= */
+
 document.getElementById("year").textContent =
-    new Date().getFullYear();
+new Date().getFullYear();
+
 
 </script>
 
 
 </body>
+
 </html>
 ```
