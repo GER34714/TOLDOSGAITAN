@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -1321,7 +1320,7 @@ header {
 
 
 /* =========================================================
-   IMAGEN "TU TOLDO A MEDIDA"
+   IMAGEN ROTATIVA "TU TOLDO A MEDIDA"
 ========================================================= */
 
 .custom-visual {
@@ -1337,6 +1336,8 @@ header {
     box-shadow:
         0 15px 45px rgba(78,29,53,.16);
 
+    background: var(--bordo);
+
 }
 
 
@@ -1351,6 +1352,28 @@ header {
     height: 100%;
 
     object-fit: cover;
+
+    opacity: 1;
+
+    transition:
+        opacity .7s ease,
+        transform 5s ease;
+
+    transform: scale(1);
+
+}
+
+
+.custom-visual img.changing {
+
+    opacity: 0;
+
+}
+
+
+.custom-visual:hover img {
+
+    transform: scale(1.04);
 
 }
 
@@ -1369,6 +1392,8 @@ header {
             rgba(49,19,34,.88),
             rgba(78,29,53,.10) 65%
         );
+
+    pointer-events: none;
 
 }
 
@@ -3559,11 +3584,12 @@ aria-label="Imagen siguiente"
 <div class="container custom-grid">
 
 
-<div class="custom-visual">
+<div class="custom-visual" id="customVisual">
 
 <img
-src="https://iili.io/nuulrn1.jpg"
-alt="Toldo realizado a medida"
+id="customRotatingImage"
+src="https://iili.io/nuul8uV.jpg"
+alt="Trabajo realizado a medida"
 loading="lazy"
 >
 
@@ -3815,19 +3841,6 @@ class="contact-link"
 
 
 <a
-href="https://www.instagram.com/i.urencitasdelirene/"
-target="_blank"
-class="contact-link"
->
-
-<i class="fa-brands fa-instagram"></i>
-
-@i.urencitasdelirene
-
-</a>
-
-
-<a
 href="https://wa.me/541137845737?text=Hola%2C%20quiero%20consultar%20por%20toldos%20a%20medida."
 target="_blank"
 class="btn"
@@ -3888,18 +3901,6 @@ protección y confort a tu espacio.
 
 
 <div class="footer-social">
-
-
-<a
-href="https://www.instagram.com/i.urencitasdelirene/"
-target="_blank"
-class="social-icon"
-aria-label="Instagram"
->
-
-<i class="fa-brands fa-instagram"></i>
-
-</a>
 
 
 <a
@@ -3989,22 +3990,6 @@ target="_blank"
 <i class="fa-brands fa-whatsapp"></i>
 
 11 3784 5737
-
-</a>
-
-</li>
-
-
-<li>
-
-<a
-href="https://www.instagram.com/i.urencitasdelirene/"
-target="_blank"
->
-
-<i class="fa-brands fa-instagram"></i>
-
-@i.urencitasdelirene
 
 </a>
 
@@ -4206,10 +4191,6 @@ function renderGallery() {
 
     galleryPrev.disabled =
         galleryPage === 0;
-
-
-    galleryNext.disabled =
-        galleryPage === totalGalleryPages - 1;
 
 
     if (
@@ -4476,6 +4457,102 @@ document.addEventListener(
 
 
 /* =========================================================
+   IMAGEN ROTATIVA
+   "TU TOLDO, A TU MEDIDA"
+========================================================= */
+
+const customRotatingImage =
+document.getElementById("customRotatingImage");
+
+
+const customImages = [
+
+    "https://iili.io/nuul8uV.jpg",
+    "https://iili.io/nuulN3b.jpg",
+    "https://iili.io/nuulhGe.jpg",
+    "https://iili.io/nuulkyQ.jpg",
+    "https://iili.io/nuulZ9R.jpg",
+    "https://iili.io/nuulrn1.jpg",
+    "https://iili.io/nuulscJ.jpg",
+    "https://iili.io/nuulDwN.jpg",
+    "https://iili.io/nuulL8v.jpg",
+    "https://iili.io/nuu0JFs.jpg",
+    "https://iili.io/nuulpnt.jpg",
+    "https://iili.io/nuulyMX.jpg",
+    "https://iili.io/nuu0dcG.jpg",
+    "https://iili.io/nuu0F94.jpg",
+    "https://iili.io/nuu02Sf.jpg",
+    "https://iili.io/nuu0KAl.jpg",
+    "https://iili.io/nuu0fN2.jpg",
+    "https://iili.io/nuu0nV9.jpg",
+    "https://iili.io/nuu0Co7.jpg",
+    "https://iili.io/nuu0oPe.jpg"
+
+];
+
+
+let customImageIndex = 0;
+
+
+/* Precarga de las imágenes para que la rotación sea fluida */
+
+customImages.forEach(src => {
+
+    const preload =
+        new Image();
+
+    preload.src = src;
+
+});
+
+
+function rotateCustomImage() {
+
+    customRotatingImage.classList.add(
+        "changing"
+    );
+
+
+    setTimeout(() => {
+
+        customImageIndex++;
+
+        if (
+            customImageIndex >= customImages.length
+        ) {
+
+            customImageIndex = 0;
+
+        }
+
+
+        customRotatingImage.src =
+            customImages[customImageIndex];
+
+
+        customRotatingImage.onload = () => {
+
+            customRotatingImage.classList.remove(
+                "changing"
+            );
+
+        };
+
+    }, 650);
+
+}
+
+
+/* Cambia automáticamente cada 4 segundos */
+
+setInterval(
+    rotateCustomImage,
+    4000
+);
+
+
+
+/* =========================================================
    WHATSAPP — OCULTAR AL LLEGAR AL FOOTER
 ========================================================= */
 
@@ -4535,4 +4612,3 @@ new Date().getFullYear();
 </body>
 
 </html>
-```
